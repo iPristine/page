@@ -7,20 +7,23 @@
   </head>
   <body>
     <header>
+      <!-- TODO: Элемент находится слева, но почему-то называется right, не понятно -->
       <p class="right">piedpiper</p>
       <p class="left">
+        <!-- TODO: Разделить бы их как-нибудь друг от друга, на весь блок поместить что-то вроде класса nav или navigation и давай ховеры повесим -->
         <a href="#1">the problem</a>|<a href="#2">PiedPiperCoin</a>|<a href="#3"
           >the team</a
         >
       </p>
     </header>
-
     <main>
+      <!-- Названия классов скорее должны называться по типу содержания, типа article или title. Есть стандарт БЭМ, если не скину ссылку - напомни, один из вариантов как можно называть, там все понятно -->
       <div class="piperNet">
         <p>PiperNet Is Here</p>
       </div>
 
       <div class="problem content">
+        <!-- TODO: не понимаю зачем тут ссылка( <a> ). Я понял зачем тут тег а, проще какому-либо блоку дать id и переходить по id, кажется это так делается. И в id писать не число а дать реальное уникальное название данного блока-->
         <a name="1"><h1>The problem</h1></a>
         <p>
           Beneath the flashy homepages of your favorite sites lurk Hooli™ and
@@ -44,7 +47,8 @@
 
       <div class="introducing content">
         <a name="2"><h1>Introducing PiedPiperCoin</h1></a>
-        <img class="logo" src="./assets/images/PPC%20Logo.png" width="50px" />
+        <!-- TODO: width если это не делается с какой-то задуманной целью, то лучше этот параметр прописывать не в атрибутак, а в тех же стилях -->
+        <img class="logo" src="./assets/images/logo-ppc.png" width="50px" />
         <p>
           Pied Piper's new internet is built for users, by users. You supply the
           storage, compute, and networking resources that power our entire
@@ -62,6 +66,7 @@
 
       <div class="team content">
         <a name="3"><h1>The Team</h1></a>
+        <!-- TODO: было бы круто взять квадратные фотки и обрезать их уже посредствами CSS-->
         <div class="member">
           <img src="./assets/images/member-1.png" width="150px" />
           <p>Melissa</p>
